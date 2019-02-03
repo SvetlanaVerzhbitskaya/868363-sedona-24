@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="#">
           <img src="../img/logo-sedona.svg" width="100" height="50" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
@@ -32,30 +32,32 @@
       <section class="5-advantages">
         <h2 class="small-town">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ul>
+        <ul class="advantages-list">
           <li>
             <p class="advantage">Настоящий городок</p>
             <p class="advantage-number">-№1-</p>
             <p class="advantage-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <img src="../img/real-town.png" width="200" height="80" alt="Настоящий городок">
           </li>
-              <ul>
+              <ul class="appartments-food-gifts">
                 <li>
-                  <img src="../img/icon-1.svg" width="30" height="30" alt="Appartments">
+                  <img src="../img/icon-1.svg" width="30" height="30" alt="Жилье">
                   <p class="advice">Жильё</p>
                   <p class="advice-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!<p>
                 </li>
                 <li>
-                  <img src="../img/icon-3.svg" width="30" height="30" alt="Food">
+                  <img src="../img/icon-3.svg" width="30" height="30" alt="Еда">
                   <p class="advice">Еда</p>
                   <p class="advice-text">Всегда заказывайте фирменные бургер, Вы не разочаруетесь!<p>
                 </li>
                 <li>
-                  <img src="../img/icon-2.svg" width="30" height="30" alt="Souvenirs">
+                  <img src="../img/icon-2.svg" width="30" height="30" alt="Сувениры">
                   <p class="advice">Сувениры</p>
                   <p class="advice-text">Не только китайского, но и местного производства!<p>
                 </li>
               </ul>
           <li>
+            <img src="../img/bridge.png" width="200" height="80" alt="Мост Дьявола">
             <p class="advantage">Там есть мост Дьявола</p>
             <p class="advantage-number">-№2-</p>
             <p class="advantage-text">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
@@ -83,13 +85,43 @@
           <a class="button" href="search-hotel.html">Поиск гоcтиницы в Седоне</a></h2>
         <p class="interest">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <!--Здесь будет форма-->
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label class="appointment-arrival-date">Дата заезда:
+              <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <button class="button-calendar" type="button">
+                <img src="../img/calendar.svg" width="20" height="20" alt="Календарь">
+              </button>
+            </lable>
+          </p>
+          <p class="appointment-item">
+            <label class="appointment-leaving-date">Дата выезда:
+              <input type="text" name="arrival-date" value"" placeholder="4 июля 2017">
+              <button class="button-calendar" type="button">
+                <img src="../img/calendar.svg" width="20" height="20" alt="Календарь">
+              </button>
+            </lable>
+          </p>
+          <p class="appointment-item">
+            <lable class="appointment-adults">Взрослые:
+              <button class="button-number" type="button">Уменьшить на 1</button>
+              <input type="text" name="adults" value="" placeholder="2">
+              <button class="button-number" type="button">Увеличить на 1</button>
+            </lable>
+            <lable class="appointment-children">Дети:
+              <button class="button-number" type="button">Уменьшить на 1</button>
+              <input type="text" name="children" value="" placeholder="0">
+              <button class="button-number" type="button">Увеличить на 1</button>
+            </lable>
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
       </section>
     </main>
 
     <footer class="main-footer">
-      <a class="instagram" href="#">VISITSEDONA</a>
-      <ul>
+      <a class="instagram" href="#">#VISITSEDONA</a>
+      <ul class="social-links">
         <li><a class="social-button" href="#">
           <img src="../img/twitter.svg" width="30" height="30" alt="Twitter">
           Твиттер</a></li>
