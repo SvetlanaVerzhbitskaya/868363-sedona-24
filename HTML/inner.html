@@ -2,9 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Седона Поиск отелей</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -26,52 +29,46 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="search-results">
           <li>
-            <lable class="appropriate-hotel">
-              <a href="amara.html">Amara Resort & Spa</a>
-              <img src="../img/amara.png" width="100" height="50" alt="Изображение гостиницы Amara">
-              <p>Гостиница</p>
-              <p>от 4000</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
-              <div>
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <p>Рейтинг: 8,5</p>
-              </div>
-            </lable>
-          </li>
-          <li>
-            <lable class="appropriate-hotel">
-              <a href="desert.html">Desert Quail Inn</a>
-              <img src="../img/desert.png" width="100" height="50" alt="Изображение гостиницы Amara">
-              <p>Мотель</p>
-              <p>от 3000</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
-              <div>
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <img src="../img/star.svg" width="15" height="15" alt="star">
-                <p>Рейтинг: 8,9</p>
-              </div>
-            </lable>
-          </li>
-          <li>
-            <lable class="appropriate-hotel">
-              <a href="villas.html">Villas at Poco Diablo</a>
-              <img src="../img/villas.png" width="100" height="50" alt="Изображение гостиницы Amara">
-              <p>Апартаменты</p>
-              <p>от 2000</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
-              <div>
+            <a class="hotel" href="amara.html">Amara Resort & Spa</a>
+            <img src="../img/amara.png" width="100" height="50" alt="Изображение гостиницы Amara">
+            <p>Гостиница</p>
+            <p>от 4000</p>
+            <a class="button button-more-inform" href="#">Подробнее</a>
+            <a class="button button-book" href="#">Забронировать</a>
+            <div>
               <img src="../img/star.svg" width="15" height="15" alt="star">
               <img src="../img/star.svg" width="15" height="15" alt="star">
-                <p>Рейтинг: 9,2</p>
-              </div>
-            </lable>
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <p class="mark">Рейтинг: 8,5</p>
+            </div>
+          </li>
+          <li>
+            <a class="hotel" href="desert.html">Desert Quail Inn</a>
+            <img src="../img/desert.png" width="100" height="50" alt="Изображение гостиницы Amara">
+            <p>Мотель</p>
+            <p>от 3000</p>
+            <a class="button button-more-inform" href="#">Подробнее</a>
+            <a class="button button-book" href="#">Забронировать</a>
+            <div>
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <p class="mark">Рейтинг: 8,9</p>
+            </div>
+          </li>
+          <li>
+            <a class="hotel" href="villas.html">Villas at Poco Diablo</a>
+            <img src="../img/villas.png" width="100" height="50" alt="Изображение гостиницы Amara">
+            <p>Апартаменты</p>
+            <p>от 2000</p>
+            <a class="button button-more-inform" href="#">Подробнее</a>
+            <a class="button button-book" href="#">Забронировать</a>
+            <div>
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <img src="../img/star.svg" width="15" height="15" alt="star">
+              <p class="mark">Рейтинг: 9,2</p>
+            </div>
           </li>
       </ul>
       </section>
@@ -79,7 +76,7 @@
 
     <footer class="main-footer">
       <a class="instagram" href="#">#VISITSEDONA</a>
-      <ul>
+      <ul class="footer-social">
         <li><a class="social-button" href="#">
           <img src="../img/twitter.svg" width="30" height="30" alt="Twitter">
           Твиттер</a></li>
