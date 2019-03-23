@@ -66,15 +66,15 @@
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
               <div class="price-controls">
-                <label class="min-price">от <input type="text" name= "min-price" value="0"></label>
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                 <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+                <div class="range-toggle range-toggle-min" aria-label="Указатель минимальной стоимости"></div>
+                <div class="range-toggle range-toggle-max" aria-label="Указатель максимальной стоимости"></div>
               </div>
               <button class="btn-transparent" type="submit">Показать</button>
             </div>
@@ -83,17 +83,17 @@
               <b>Найдено: 3</b>
               <p class="sorting-text sorting-text-title">Сортировка:</p>
               <ul class="sorting-points">
-                <li class="sorting-text sorting-text-active"><a href="#">По цене</a></li>
+                <li class="sorting-text sorting-text-active">По цене</li>
                 <li class="sorting-text"><a href="#">По типу</a></li>
                 <li class="sorting-text"><a href="#">По рейтингу</a></li>
               </ul>
               <div class="increase-decrease">
-                <button class="button-increase-decrease button-up" type="button">По возрастанию
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z" class="up"/></svg>
-                </button>
-                <button class=" button-increase-decrease button-down" type="button">По убыванию
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11" class="down"/></svg>
-                </button>
+                <a class="button-increase-decrease button-up" href="#">По возрастанию
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z" class="up-down"/></svg>
+                </a>
+                <a class="button-increase-decrease button-down">По убыванию
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11" class="up-down"/></svg>
+                </a>
               </div>
             </div>
         </form>
@@ -130,7 +130,8 @@
               <img class="hotel-image" src="img/desert.jpg" width="135" height="90" alt="Изображение гостиницы Desert">
               <p class="hotel-type-price">
                 <span class="type">Мотель</span>
-                <span  class="price">от 3000 р.</span></p>
+                <span  class="price">от 3000 р.</span>
+              </p>
               <p class="button-inform-book">
                 <a class="button button-more-inform" href="#">Подробнее</a>
                 <a class="button button-book" href="#">Забронировать</a>
@@ -151,12 +152,12 @@
               <img class="hotel-image" src="img/villas.jpg" width="135" height="90" alt="Изображение гостиницы Villas">
               <p class="hotel-type-price">
                 <span class="type">Апартаменты</span>
-                <span class="price">от 2000 р.</span></p>
+                <span class="price">от 2000 р.</span>
+              </p>
               <p class="button-inform-book">
                 <a class="button button-more-inform" href="#">Подробнее</a>
                 <a class="button button-book" href="#">Забронировать</a>
               </p>
-
             </div>
             <div class="inner-column-2">
               <div class="stars">
